@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="search">
+        <div class="input">
+            <input type="text" id="search-input" placeholder="Enter city name...">
+            <span class="input-border"></span>
+        </div>
+        <div class="btn">
+            <button class="button" id="search-btn">
+                <span class="button-content">Search</span>
+            </button>
+        </div>
+    </div>
+    <div class="weather-info">
+        <div class="first-block">
+            <p id="conditions">Mostly sunny</p>
+            <h2 id="location">London</h2>
+        </div>
+        <div class="second-block">
+            <div id="temp-container">
+                <h3 id="temp">3.4</h3>
+                <p id="temp-symbol">°C</p>
+            </div>
+            <div class="divider"></div>
+            <div id="additional-info">
+                <p id="feelslike" class="info">Feels like: 2°C</p>
+                <p id="wind" class="info">Wind: 12.2 km/h</p>
+                <p id="humidity" class="info">Humidity: 65%</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

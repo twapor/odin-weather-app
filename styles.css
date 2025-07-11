@@ -1,0 +1,172 @@
+
+body {
+    background-image: url(./img/fatih-YvFkJguo4pw-unsplash.jpg);
+    background-size: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 1vw;
+    max-width: 500px;
+    margin: 2vh 5vw;
+
+}
+
+.input {
+    --width-of-input: 400px;
+    --border-height: 1px;
+    --border-before-color: rgb(253, 253, 253);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+}
+
+#search-input  {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+
+   #search-input::placeholder {
+    color: #fff;
+    font-size: 0.9rem;
+   }
+   /* styling of animated border */
+   .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+   #search-input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   #search-input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+   #search-input:focus ~ .input-border {
+    width: 100%;
+   }
+
+   .button {
+    position: relative;
+    overflow: hidden;
+    height: 2rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    font-size: 4.5em;
+    margin: -10px 0;
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    font-size: 5em;
+    margin: -10px 0;
+  }
+
+  p{
+      font-family: "Roboto",sans-serif;
+      color: aliceblue;
+      font-size: 1.1em;
+      margin-bottom: 0;
+  }
+
+  #conditions{
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    font-size: 1.1em;
+    margin: 0.1em 0.2em;
+  }
+  
+  #temp-symbol {
+    color: aliceblue;
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 0.1em 0.2em;
+  }
+
+  #temp-container {
+    display: flex;
+    align-items: top;
+  }
+
+  .second-block {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+  .divider {
+    border: aliceblue solid 1px;
+    height: 5em;
+    width: 0px;
+  }
+
+  .info {
+    margin: 0.3em;
+    font-size: 0.8em;
+  }
+
+#additional-info {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.weather-info {
+  margin: 2vh 5vw
+}
